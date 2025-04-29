@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c8hbu4l87xptw"]
+
+[node name="loading" type="Node2D"]
+
+[node name="uploadAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(239, 132)

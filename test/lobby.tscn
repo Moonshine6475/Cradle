@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://61upg58l8uq"]
+
+[ext_resource type="Script" path="res://lobby.gd" id="1_gncs7"]
+[ext_resource type="Script" path="res://CurrencyHeld.gd" id="5_whe1o"]
+[ext_resource type="Texture2D" uid="uid://djs6v78553pg" path="res://assets/lobbyConcept.png" id="14_mq4nn"]
+[ext_resource type="Script" path="res://startRun.gd" id="15_623k0"]
+[ext_resource type="Texture2D" uid="uid://c5rjib5wln7km" path="res://assets/startRunPoint.png" id="16_bk8kk"]
+
+[node name="lobby" type="Node2D"]
+position = Vector2(6, 269)
+script = ExtResource("1_gncs7")
+
+[node name="lobbyBackground" type="Sprite2D" parent="."]
+position = Vector2(233.875, -132.75)
+scale = Vector2(0.249088, 0.249537)
+texture = ExtResource("14_mq4nn")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-4.0425, -266.609)
+scale = Vector2(0.248996, 0.248043)
+build_mode = 1
+polygon = PackedVector2Array(269, 118, 280, 323, 283, 846, 299, 845, 313, 1079, 413, 1079, 414, 905, 842, 905, 840, 1081, 1199, 1081, 1198, 981, 1610, 981, 1610, 1079, 1888, 1080, 1875.7, 953.903, 1719.07, 961.966, 1715.06, 780.546, 1875.7, 772.483, 1883, 328, 1632, 329, 1632, 241, 1518, 241, 1518, 253, 402, 251, 395, 118)
+
+[node name="startRun" type="Area2D" parent="."]
+priority = 1
+script = ExtResource("15_623k0")
+
+[node name="Sprite2D" type="Sprite2D" parent="startRun"]
+position = Vector2(249, -23)
+scale = Vector2(0.134516, 0.069091)
+texture = ExtResource("16_bk8kk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="startRun"]
+position = Vector2(-266.016, -383.447)
+scale = Vector2(0.516582, 0.368852)
+build_mode = 1
+polygon = PackedVector2Array(966, 998, 947, 979, 953, 959, 972, 948, 995, 944, 1019, 947, 1044, 960, 1045, 985, 1028, 1000, 999, 1005)
+
+[node name="CurrencyHeld" type="RichTextLabel" parent="."]
+offset_left = 382.0
+offset_top = -265.0
+offset_right = 467.0
+offset_bottom = -240.0
+script = ExtResource("5_whe1o")
+
+[connection signal="body_entered" from="startRun" to="startRun" method="_on_body_entered"]

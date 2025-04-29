@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cntksw18c3ibl"]
+
+[node name="charCreateScreen" type="Node2D"]
+position = Vector2(0, 1)
+
+[node name="Background1" type="Sprite2D" parent="."]

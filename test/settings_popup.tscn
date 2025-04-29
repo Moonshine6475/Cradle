@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bp45fvyg3knna"]
+
+[node name="settingsPopup" type="Node2D"]

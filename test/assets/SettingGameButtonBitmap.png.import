@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ce3en5rdhweo1"
+path="res://.godot/imported/SettingGameButtonBitmap.png-3c503b0a19a93cc104f11b02f1aec3d2.res"
+
+[deps]
+
+source_file="res://assets/SettingGameButtonBitmap.png"
+dest_files=["res://.godot/imported/SettingGameButtonBitmap.png-3c503b0a19a93cc104f11b02f1aec3d2.res"]
+
+[params]
+
+create_from=0
+threshold=0.1

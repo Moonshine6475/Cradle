@@ -1,0 +1,67 @@
+[gd_scene load_steps=14 format=3 uid="uid://bes22qy1faf6q"]
+
+[ext_resource type="Texture2D" uid="uid://dayxj2socqrtg" path="res://assets/spawn_00.png" id="1_p0wso"]
+[ext_resource type="Texture2D" uid="uid://cesn6k1rkll6h" path="res://assets/spawn_01.png" id="2_pgr8q"]
+[ext_resource type="Texture2D" uid="uid://dpmtw1pxlovtn" path="res://assets/spawn_02.png" id="3_orxsy"]
+[ext_resource type="Texture2D" uid="uid://ch2t3ln1xw11s" path="res://assets/spawn_03.png" id="4_jgd53"]
+[ext_resource type="Texture2D" uid="uid://ccfcuikefwgqs" path="res://assets/spawn_04.png" id="5_tvoey"]
+[ext_resource type="Texture2D" uid="uid://ctwjk5legr1x1" path="res://assets/spawn_05.png" id="6_6626h"]
+[ext_resource type="Texture2D" uid="uid://dv4kr1agn7ucj" path="res://assets/spawn_06.png" id="7_ft0gw"]
+[ext_resource type="Texture2D" uid="uid://cpfiorphi8rf" path="res://assets/spawn_07.png" id="8_8b6hg"]
+[ext_resource type="Texture2D" uid="uid://bg7usmvm6yjd2" path="res://assets/spawn_08.png" id="9_7tjvn"]
+[ext_resource type="Texture2D" uid="uid://cg7lvgcrd6rdo" path="res://assets/spawn_09.png" id="10_soy7u"]
+[ext_resource type="Texture2D" uid="uid://ddum5fhd6rbbc" path="res://assets/spawn_10.png" id="11_2ophf"]
+[ext_resource type="Script" path="res://spawn.gd" id="12_k8rwa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_js1ut"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p0wso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pgr8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_orxsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jgd53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tvoey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6626h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ft0gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8b6hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7tjvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_soy7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2ophf")
+}],
+"loop": true,
+"name": &"spawn",
+"speed": 12.0
+}]
+
+[node name="main" type="Node2D"]
+
+[node name="TitlePage" type="Node2D" parent="."]
+
+[node name="spawn" type="AnimatedSprite2D" parent="TitlePage"]
+position = Vector2(757, 226)
+scale = Vector2(0.510417, 0.494792)
+sprite_frames = SubResource("SpriteFrames_js1ut")
+animation = &"spawn"
+frame_progress = 0.388997
+script = ExtResource("12_k8rwa")
