@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://61upg58l8uq"]
+[gd_scene load_steps=7 format=3 uid="uid://61upg58l8uq"]
 
 [ext_resource type="Script" path="res://lobby.gd" id="1_gncs7"]
+[ext_resource type="Script" path="res://ForgeInteract.gd" id="3_gx85j"]
 [ext_resource type="Script" path="res://CurrencyHeld.gd" id="5_whe1o"]
 [ext_resource type="Texture2D" uid="uid://djs6v78553pg" path="res://assets/lobbyConcept.png" id="14_mq4nn"]
 [ext_resource type="Script" path="res://startRun.gd" id="15_623k0"]
@@ -18,12 +19,17 @@ texture = ExtResource("14_mq4nn")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(-4.0425, -266.609)
+position = Vector2(-6, -267)
 scale = Vector2(0.248996, 0.248043)
 build_mode = 1
 polygon = PackedVector2Array(269, 118, 280, 323, 283, 846, 299, 845, 313, 1079, 413, 1079, 414, 905, 842, 905, 840, 1081, 1199, 1081, 1198, 981, 1610, 981, 1610, 1079, 1888, 1080, 1875.7, 953.903, 1719.07, 961.966, 1715.06, 780.546, 1875.7, 772.483, 1883, 328, 1632, 329, 1632, 241, 1518, 241, 1518, 253, 402, 251, 395, 118)
 
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(62, -236, 89, -237, 90, -184, 64, -184)
+script = ExtResource("3_gx85j")
+
 [node name="startRun" type="Area2D" parent="."]
+position = Vector2(-1, 1)
 priority = 1
 script = ExtResource("15_623k0")
 

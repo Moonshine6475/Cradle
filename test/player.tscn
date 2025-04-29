@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://criowun0fryii"]
+[gd_scene load_steps=18 format=3 uid="uid://criowun0fryii"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_fnd15"]
 [ext_resource type="Texture2D" uid="uid://b2owuy1gvusqm" path="res://assets/characterTempIcon.png" id="1_kj40j"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cg7lvgcrd6rdo" path="res://assets/spawn_09.png" id="12_v6f3n"]
 [ext_resource type="Texture2D" uid="uid://ddum5fhd6rbbc" path="res://assets/spawn_10.png" id="13_p6d64"]
 [ext_resource type="Script" path="res://spawn.gd" id="14_vseku"]
+[ext_resource type="Script" path="res://interact button.gd" id="15_awn5v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g31bm"]
 size = Vector2(18, 12)
@@ -79,3 +80,7 @@ animation = &"spawn"
 frame = 10
 frame_progress = 1.0
 script = ExtResource("14_vseku")
+
+[node name="interact button" type="Sprite2D" parent="."]
+visible = false
+script = ExtResource("15_awn5v")
