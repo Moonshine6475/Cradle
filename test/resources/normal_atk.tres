@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="NormalAttackAbility" load_steps=2 format=3 uid="uid://jfc2th70rnug"]
+
+[ext_resource type="Script" path="res://resources/normalatk.gd" id="1_3i45l"]
+
+[resource]
+script = ExtResource("1_3i45l")
+name = "Normal Atk"
+description = ""
+ap_cost = 0
+ap_recover = 1
+ability_lvl = 1
+cooldown = 0
+pri_damage_type = 0
+sec_damage_type = 0
+effect = 5
+effectDur = 0
+target_type = 0

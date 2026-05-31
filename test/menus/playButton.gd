@@ -20,13 +20,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
-
-
-func _on_button_up():
-	settingsButton.hide()
-	quit.hide()
-	playButton.hide()
-	newGameButton.show()
-	loadGameButton.show()
-	back.show()
-	pass # Replace with function body.

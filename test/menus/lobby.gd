@@ -1,9 +1,9 @@
 extends Node2D
 
-@onready var menu = preload("res://pause_menu.tscn").instantiate()
+@onready var menu = preload("res://menus/pause_menu.tscn").instantiate()
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var player = load("res://player.tscn").instantiate()
+	var player = load("res://player/player.tscn").instantiate()
 	add_child(player)
 	player.position = Vector2(255, -120)
 	pass # Replace with function body.

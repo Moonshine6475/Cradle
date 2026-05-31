@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SimplePatch" load_steps=2 format=3 uid="uid://c8h7r201hvqg3"]
+
+[ext_resource type="Script" path="res://resources/simplepatch.gd" id="1_ffvuh"]
+
+[resource]
+script = ExtResource("1_ffvuh")
+name = "Simple Patch"
+description = ""
+ap_cost = 2
+ap_recover = 0
+ability_lvl = 1
+cooldown = 3
+pri_damage_type = 4
+sec_damage_type = 0
+effect = 5
+effectDur = 0
+target_type = 1

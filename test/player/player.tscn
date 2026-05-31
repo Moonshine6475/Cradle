@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://criowun0fryii"]
+[gd_scene load_steps=19 format=3 uid="uid://criowun0fryii"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_fnd15"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_fnd15"]
 [ext_resource type="Texture2D" uid="uid://b2owuy1gvusqm" path="res://assets/characterTempIcon.png" id="1_kj40j"]
+[ext_resource type="Resource" uid="uid://c4kwdwpu1jehw" path="res://player/player_stats.tres" id="2_kjoic"]
 [ext_resource type="Texture2D" uid="uid://dayxj2socqrtg" path="res://assets/spawn_00.png" id="3_65wp7"]
 [ext_resource type="Texture2D" uid="uid://cesn6k1rkll6h" path="res://assets/spawn_01.png" id="4_gai40"]
 [ext_resource type="Texture2D" uid="uid://dpmtw1pxlovtn" path="res://assets/spawn_02.png" id="5_ow5hj"]
@@ -14,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cg7lvgcrd6rdo" path="res://assets/spawn_09.png" id="12_v6f3n"]
 [ext_resource type="Texture2D" uid="uid://ddum5fhd6rbbc" path="res://assets/spawn_10.png" id="13_p6d64"]
 [ext_resource type="Script" path="res://spawn.gd" id="14_vseku"]
-[ext_resource type="Script" path="res://interact button.gd" id="15_awn5v"]
+[ext_resource type="Script" path="res://menus/interact button.gd" id="15_awn5v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g31bm"]
 size = Vector2(18, 12)
@@ -64,6 +65,7 @@ animations = [{
 motion_mode = 1
 slide_on_ceiling = false
 script = ExtResource("1_fnd15")
+stats = ExtResource("2_kjoic")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_g31bm")
@@ -74,6 +76,7 @@ texture = ExtResource("1_kj40j")
 
 [node name="spawn" type="AnimatedSprite2D" parent="."]
 top_level = true
+position = Vector2(-1, -1)
 scale = Vector2(0.316408, 0.225912)
 sprite_frames = SubResource("SpriteFrames_oduv4")
 animation = &"spawn"

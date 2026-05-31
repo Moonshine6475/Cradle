@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Spawn In.gd" id="1_38qb3"]
 [ext_resource type="Texture2D" uid="uid://dayxj2socqrtg" path="res://assets/spawn_00.png" id="1_p0wso"]
-[ext_resource type="PackedScene" uid="uid://duxuwu5cpo1j5" path="res://title.tscn" id="2_5uav2"]
+[ext_resource type="PackedScene" uid="uid://cl28ej3xpm34d" path="res://title.tscn" id="2_5uav2"]
 [ext_resource type="Texture2D" uid="uid://cesn6k1rkll6h" path="res://assets/spawn_01.png" id="2_pgr8q"]
 [ext_resource type="Texture2D" uid="uid://dpmtw1pxlovtn" path="res://assets/spawn_02.png" id="3_orxsy"]
 [ext_resource type="Texture2D" uid="uid://ch2t3ln1xw11s" path="res://assets/spawn_03.png" id="4_jgd53"]
@@ -15,11 +15,11 @@
 [ext_resource type="Texture2D" uid="uid://ddum5fhd6rbbc" path="res://assets/spawn_10.png" id="11_2ophf"]
 [ext_resource type="Script" path="res://spawn.gd" id="12_k8rwa"]
 [ext_resource type="PackedScene" uid="uid://i6lj2rf2cwgm" path="res://ui.tscn" id="15_4f6c4"]
-[ext_resource type="PackedScene" uid="uid://criowun0fryii" path="res://player.tscn" id="15_ig43c"]
-[ext_resource type="PackedScene" uid="uid://capb1hpscn2sn" path="res://pause_menu.tscn" id="17_82v21"]
-[ext_resource type="PackedScene" uid="uid://cntksw18c3ibl" path="res://char_create_screen.tscn" id="19_gfr85"]
+[ext_resource type="PackedScene" uid="uid://criowun0fryii" path="res://player/player.tscn" id="15_ig43c"]
+[ext_resource type="PackedScene" uid="uid://capb1hpscn2sn" path="res://menus/pause_menu.tscn" id="17_82v21"]
+[ext_resource type="PackedScene" uid="uid://cntksw18c3ibl" path="res://menus/char_create_screen.tscn" id="19_gfr85"]
 [ext_resource type="PackedScene" uid="uid://c8hbu4l87xptw" path="res://loading.tscn" id="20_yyv01"]
-[ext_resource type="PackedScene" uid="uid://61upg58l8uq" path="res://lobby.tscn" id="29_xwsin"]
+[ext_resource type="PackedScene" uid="uid://c53kkmpthaejg" path="res://menus/lobby.tscn" id="29_xwsin"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_js1ut"]
 animations = [{
