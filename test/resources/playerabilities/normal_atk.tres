@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="NormalAttackAbility" load_steps=2 format=3 uid="uid://jfc2th70rnug"]
 
-[ext_resource type="Script" path="res://resources/normalatk.gd" id="1_3i45l"]
+[ext_resource type="Script" path="res://resources/playerabilities/normalatk.gd" id="1_3i45l"]
 
 [resource]
 script = ExtResource("1_3i45l")

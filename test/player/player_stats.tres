@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Entity" load_steps=4 format=3 uid="uid://c4kwdwpu1jehw"]
 
 [ext_resource type="Script" path="res://scripts/entity.gd" id="1_ex1tw"]
-[ext_resource type="Script" path="res://resources/normalatk.gd" id="1_rnm5o"]
+[ext_resource type="Script" path="res://resources/playerabilities/normalatk.gd" id="1_rnm5o"]
 
 [sub_resource type="Resource" id="Resource_jrpfw"]
 script = ExtResource("1_rnm5o")
@@ -13,8 +13,6 @@ ability_lvl = 1
 cooldown = 2
 pri_damage_type = 0
 sec_damage_type = 0
-effect = 5
-effectDur = 0
 target_type = 0
 
 [resource]
@@ -26,4 +24,7 @@ str = 1
 inte = 1
 spd = 1
 eva = 1
+status = []
+curhealth = 0
+trueDmgTaken = 0
 a1 = SubResource("Resource_jrpfw")

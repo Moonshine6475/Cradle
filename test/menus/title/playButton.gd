@@ -9,8 +9,6 @@ var back
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	playButton = get_node(".")
-	newGameButton = get_node("../newGameButton")
-	loadGameButton = get_node("../loadGameButton")
 	settingsButton = get_node("../settingsButton")
 	quit = get_node("../quitButton")
 	back = get_node("../returnButton")

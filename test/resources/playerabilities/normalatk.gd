@@ -2,10 +2,11 @@ extends Ability
 class_name NormalAttackAbility
 
 # Overriding the base function with your custom formula
-func get_primary_damage(attacker: Entity, target: Entity) -> float:
-	var plvl = attacker.lvl
-	var str_val = attacker.str
-	
+func get_primary_damage(attacker: Resource, target: Resource) -> float:
+	var attacker2 = attacker as Entity
+	var plvl = attacker2.lvl
+	var str_val = attacker2.str
+	var target2 = target as Entity
 	if str_val <= 0: 
 		str_val = 1 
 		

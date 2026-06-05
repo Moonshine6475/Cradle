@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbav8o7ftqlsg"]
+
+[ext_resource type="Script" path="res://menus/lobby/forge/forge.gd" id="1_cs8n0"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rtsft"]
+
+[node name="Forge" type="Node2D"]
+script = ExtResource("1_cs8n0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 90.0
+offset_top = 35.0
+offset_right = 400.0
+offset_bottom = 229.0
+texture = SubResource("CanvasTexture_rtsft")

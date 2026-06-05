@@ -11,8 +11,8 @@ func _process(delta):
 	pass
 
 
-func _on_new_game_button_button_up():
-	get_tree().change_scene_to_file("res://char_create_screen.tscn")
+func _on_play_button_button_up():
+	get_tree().change_scene_to_file("res://menus/char_create_screen.tscn")
 	 # Replace with function body.
 
 

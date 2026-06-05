@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=2 format=3 uid="uid://dfejfw2tl876t"]
+
+[ext_resource type="Script" path="res://scripts/effect.gd" id="1_ua71w"]
+
+[resource]
+script = ExtResource("1_ua71w")
+effect = "Reactive"
+effectDur = 0
+stackable = false
+value = 0.0
+dmgstore = 0.0
+stacks = 0
+elvl = 0

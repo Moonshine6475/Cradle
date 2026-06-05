@@ -1,12 +1,14 @@
-extends TextureButton
-@onready var newGameButton = get_node('.')
-
+extends Area2D
+@onready var charCreate = preload("res://menus/loading.tscn").instantiate()
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	newGameButton.hide()
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func _on_body_entered(body):
+	get_tree().change_scene_to_file("res://menu/loading.tscn")
+	pass # Replace with function body.

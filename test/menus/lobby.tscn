@@ -1,11 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://c53kkmpthaejg"]
+[gd_scene load_steps=9 format=3 uid="uid://c53kkmpthaejg"]
 
-[ext_resource type="Script" path="res://menus/lobby.gd" id="1_gncs7"]
-[ext_resource type="Script" path="res://menus/ForgeInteract.gd" id="3_gx85j"]
+[ext_resource type="Script" path="res://menus/lobby/lobby.gd" id="1_gncs7"]
+[ext_resource type="Script" path="res://menus/lobby/ForgeInteract.gd" id="3_gx85j"]
 [ext_resource type="Script" path="res://common/CurrencyHeld.gd" id="5_whe1o"]
 [ext_resource type="Texture2D" uid="uid://djs6v78553pg" path="res://assets/lobbyConcept.png" id="14_mq4nn"]
-[ext_resource type="Script" path="res://startRun.gd" id="15_623k0"]
+[ext_resource type="Script" path="res://menus/lobby/startRun.gd" id="15_623k0"]
 [ext_resource type="Texture2D" uid="uid://c5rjib5wln7km" path="res://assets/startRunPoint.png" id="16_bk8kk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bynjw"]
+size = Vector2(32, 45.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6phc"]
+size = Vector2(56, 24)
 
 [node name="lobby" type="Node2D"]
 position = Vector2(6, 269)
@@ -22,17 +28,21 @@ texture = ExtResource("14_mq4nn")
 position = Vector2(-6, -267)
 scale = Vector2(0.248996, 0.248043)
 build_mode = 1
-polygon = PackedVector2Array(269, 118, 280, 323, 283, 846, 299, 845, 313, 1079, 413, 1079, 414, 905, 842, 905, 841.226, 973.12, 840, 1081, 1199, 1081, 1198, 981, 1610, 981, 1610, 1079, 1888, 1080, 1875.7, 953.903, 1719.07, 961.966, 1715.06, 780.546, 1875.7, 772.483, 1883, 328, 1632, 329, 1632, 241, 1518, 241, 1518, 253, 402, 251, 395, 118)
+polygon = PackedVector2Array(269, 118, 269.081, 1084.49, 413.661, 1084.49, 414, 905, 835.355, 903.069, 840, 1081, 1199, 1081, 1198, 981, 1610, 981, 1610.47, 1084.49, 1883.56, 1084.49, 1883.56, 330.588, 1632, 329, 1630.55, 221.736, 1518.1, 221.736, 1518, 253, 402, 251, 401.613, 116.915)
 
-[node name="forge" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(62, -236, 89, -237, 90, -184, 64, -184)
+[node name="Forge" type="Area2D" parent="StaticBody2D"]
 script = ExtResource("3_gx85j")
 
-[node name="hoverForge" type="TextureButton" parent="StaticBody2D/forge"]
-offset_left = 97.0
-offset_top = -231.0
-offset_right = 176.0
-offset_bottom = -191.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Forge"]
+position = Vector2(77, -213.875)
+shape = SubResource("RectangleShape2D_bynjw")
+
+[node name="SkillTree" type="Area2D" parent="StaticBody2D"]
+position = Vector2(319, -193)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/SkillTree"]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_s6phc")
 
 [node name="startRun" type="Area2D" parent="."]
 position = Vector2(-3, -2)
@@ -40,12 +50,12 @@ priority = 1
 script = ExtResource("15_623k0")
 
 [node name="Sprite2D" type="Sprite2D" parent="startRun"]
-position = Vector2(249, -23)
+position = Vector2(249, -20)
 scale = Vector2(0.134516, 0.069091)
 texture = ExtResource("16_bk8kk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="startRun"]
-position = Vector2(-266.016, -383.447)
+position = Vector2(-267, -380)
 scale = Vector2(0.516582, 0.368852)
 build_mode = 1
 polygon = PackedVector2Array(966, 998, 947, 979, 953, 959, 972, 948, 995, 944, 1019, 947, 1044, 960, 1045, 985, 1028, 1000, 999, 1005)
@@ -57,4 +67,6 @@ offset_right = 465.0
 offset_bottom = -241.0
 script = ExtResource("5_whe1o")
 
+[connection signal="body_entered" from="StaticBody2D/Forge" to="StaticBody2D/Forge" method="_on_body_entered"]
+[connection signal="body_exited" from="StaticBody2D/Forge" to="StaticBody2D/Forge" method="_on_body_exited"]
 [connection signal="body_entered" from="startRun" to="startRun" method="_on_body_entered"]

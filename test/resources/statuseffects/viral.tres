@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Viral" load_steps=2 format=3 uid="uid://cbgumml14p5vm"]
+
+[ext_resource type="Script" path="res://resources/statuseffects/viral.gd" id="1_4xgm4"]
+
+[resource]
+script = ExtResource("1_4xgm4")
+effect = "Viral"
+effectDur = 0
+stackable = false
+value = 0.0
+dmgstore = 0.0
+stacks = 0
+elvl = 0

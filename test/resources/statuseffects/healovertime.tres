@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HealOverTime" load_steps=2 format=3 uid="uid://binivxlb3ewb"]
+
+[ext_resource type="Script" path="res://resources/statuseffects/healovertime.gd" id="1_peyty"]
+
+[resource]
+script = ExtResource("1_peyty")
+effect = "HealOverTime"
+effectDur = 0
+stackable = false
+value = 0.0
+dmgstore = 0.0
+stacks = 0
+elvl = 0

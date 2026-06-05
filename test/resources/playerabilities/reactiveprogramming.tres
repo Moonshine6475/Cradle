@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Ability" load_steps=3 format=3 uid="uid://csxjoo84ouxux"]
+
+[ext_resource type="Resource" uid="uid://dfejfw2tl876t" path="res://resources/statuseffects/reactive.tres" id="1_0lc1o"]
+[ext_resource type="Script" path="res://scripts/ability.gd" id="1_wa0ba"]
+
+[resource]
+script = ExtResource("1_wa0ba")
+name = "Reactive"
+description = ""
+ap_cost = 1
+ap_recover = 0
+ability_lvl = 1
+cooldown = 2
+effect = ExtResource("1_0lc1o")
+pri_damage_type = 3
+sec_damage_type = 0
+target_type = 0

@@ -1,15 +1,15 @@
 [gd_scene load_steps=12 format=3 uid="uid://capb1hpscn2sn"]
 
-[ext_resource type="Script" path="res://menus/pause_menu.gd" id="1_t58py"]
+[ext_resource type="Script" path="res://menus/pausemenu/pause_menu.gd" id="1_jmf86"]
 [ext_resource type="Texture2D" uid="uid://bfl6l6moygy56" path="res://assets/pauseMenu.png" id="2_gqqy6"]
 [ext_resource type="Texture2D" uid="uid://d3egllgmfigta" path="res://assets/quitGameButtonIdle.png" id="3_5yx1j"]
 [ext_resource type="Texture2D" uid="uid://ccj4vw3h77nss" path="res://assets/quitGameButtonPressed.png" id="4_45y4l"]
 [ext_resource type="Texture2D" uid="uid://bd273n45mli72" path="res://assets/quitGameButtonHover.png" id="5_f7h21"]
-[ext_resource type="Script" path="res://menus/quitButton.gd" id="6_jxqxu"]
+[ext_resource type="Script" path="res://menus/title/quitButton.gd" id="6_08uh2"]
 [ext_resource type="Texture2D" uid="uid://cnav4ng8u3cvw" path="res://assets/resumeButtonIdle.png" id="7_b5taa"]
 [ext_resource type="Texture2D" uid="uid://uri4r6lhv4v6" path="res://assets/resumeButtonPressed.png" id="8_48d60"]
 [ext_resource type="Texture2D" uid="uid://c5hngpulj34mo" path="res://assets/resumeButtonHover.png" id="9_qs4g7"]
-[ext_resource type="Script" path="res://menus/resumeButton.gd" id="10_10dht"]
+[ext_resource type="Script" path="res://menus/pausemenu/resumeButton.gd" id="10_dib7v"]
 
 [sub_resource type="BitMap" id="BitMap_ti1cv"]
 data = {
@@ -19,7 +19,7 @@ data = {
 
 [node name="pause menu" type="Node2D"]
 position = Vector2(239, 133)
-script = ExtResource("1_t58py")
+script = ExtResource("1_jmf86")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1.00002, -7.62939e-06)
@@ -36,7 +36,7 @@ texture_pressed = ExtResource("4_45y4l")
 texture_hover = ExtResource("5_f7h21")
 texture_click_mask = SubResource("BitMap_ti1cv")
 stretch_mode = 0
-script = ExtResource("6_jxqxu")
+script = ExtResource("6_08uh2")
 
 [node name="resumeButton" type="TextureButton" parent="."]
 offset_left = -177.0
@@ -48,7 +48,7 @@ texture_pressed = ExtResource("8_48d60")
 texture_hover = ExtResource("9_qs4g7")
 texture_click_mask = SubResource("BitMap_ti1cv")
 stretch_mode = 0
-script = ExtResource("10_10dht")
+script = ExtResource("10_dib7v")
 
 [connection signal="button_up" from="quitButton" to="quitButton" method="_on_button_up"]
 [connection signal="pressed" from="resumeButton" to="resumeButton" method="_on_pressed"]
