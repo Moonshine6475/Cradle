@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Entity" load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://resources/playerabilities/normalatk.gd" id="1_3vtja"]
-[ext_resource type="Script" path="res://scripts/entity.gd" id="2_g7d2h"]
+[ext_resource type="Script" path="res://resources/playerabilities/normalatk.gd" id="1_sn6bt"]
+[ext_resource type="Script" path="res://scripts/entity.gd" id="2_ggvyw"]
 
 [sub_resource type="Resource" id="Resource_jrpfw"]
-script = ExtResource("1_3vtja")
+script = ExtResource("1_sn6bt")
 name = "New Ability"
 description = ""
 ap_cost = 0
@@ -16,15 +16,17 @@ sec_damage_type = 0
 target_type = 0
 
 [resource]
-script = ExtResource("2_g7d2h")
+script = ExtResource("2_ggvyw")
 lvl = 1
 ps = 1
 def = 1
-str = 1
+stre = 1
 inte = 1
 spd = 1
 eva = 1
 status = []
+facing = 1.0
+speed = 250.0
 curhealth = 0
 trueDmgTaken = 0
 a1 = SubResource("Resource_jrpfw")

@@ -15,6 +15,7 @@ func _on_body_entered(body):
 		body.set_meta("current_interactable", self)
 
 func _on_body_exited(body):
+	print("exit")
 	if body.has_node("Sprite2D/Interact"):
 		body.get_node("Sprite2D/Interact").hide()
 		# Remove the reference when walking away

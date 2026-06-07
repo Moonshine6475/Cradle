@@ -11,7 +11,6 @@ func _ready():
 	playButton = get_node(".")
 	settingsButton = get_node("../settingsButton")
 	quit = get_node("../quitButton")
-	back = get_node("../returnButton")
 	pass # Replace with function body.
 
 

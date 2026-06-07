@@ -9,12 +9,17 @@ func _ready() -> void:
 
 @export var ps: int = 1
 @export var def: int = 1
-@export var str: int = 1
+@export var stre: int = 1
 @export var inte: int = 1
 @export var spd: int = 1
 @export var eva: int = 1
 @export var status: Array = [Effect] 
+
+
 @export var linkedEntity: Entity = null
+
+@export var facing: float = 1.0
+@export var speed: float = 250.0
 
 
 var maxhealth: int:

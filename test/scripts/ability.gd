@@ -17,10 +17,10 @@ enum TargetType { ENEMY, SELF}
 @export var target_type: TargetType = TargetType.ENEMY
 
 # The core execution logic that every specific ability overrides
-func get_primary_damage(caster: Resource, target: Resource) -> float:
+func get_primary_damage(_caster: Resource, _target: Resource) -> float:
 	return 0
 	
-func get_secondary_damage(caster: Resource, target: Resource) -> float:
+func get_secondary_damage(_caster: Resource, _target: Resource) -> float:
 	return 0
-func apply_effect(caster: Resource, target: Resource, effect: Effect) -> void:
+func apply_effect(_caster: Resource, _target: Resource, _effect) -> void:
 	pass

@@ -1,5 +1,5 @@
-extends Area2D
-@onready var charCreate = preload("res://menus/loading.tscn").instantiate()
+extends Interact
+@onready var scene = preload("res://menus/loading.tscn").instantiate()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -9,6 +9,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_body_entered(body):
-	get_tree().change_scene_to_file("res://menu/loading.tscn")
+func interact(player: CharacterBody2D):
+	print("yeh")
+	get_tree().change_scene_to_file("res://menus/loading.tscn")
 	pass # Replace with function body.

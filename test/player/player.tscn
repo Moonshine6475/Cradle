@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://criowun0fryii"]
+[gd_scene load_steps=19 format=3 uid="uid://criowun0fryii"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_fnd15"]
 [ext_resource type="Resource" uid="uid://c4kwdwpu1jehw" path="res://player/player_stats.tres" id="2_kjoic"]
@@ -16,10 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://ddum5fhd6rbbc" path="res://assets/spawn_10.png" id="13_p6d64"]
 [ext_resource type="Script" path="res://menus/lobby/spawn.gd" id="14_vseku"]
 [ext_resource type="Texture2D" uid="uid://bpnn4ve541mdu" path="res://assets/hoverForge.png" id="16_vbfeq"]
-[ext_resource type="Texture2D" uid="uid://cg0sihvr8ime7" path="res://assets/hoverForgeHover.png" id="17_5evcf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g31bm"]
-size = Vector2(15.8125, 34.375)
+size = Vector2(15.8125, 27.0313)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oduv4"]
 animations = [{
@@ -69,27 +68,29 @@ script = ExtResource("1_fnd15")
 stats = ExtResource("2_kjoic")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.90625, 0.1875)
+position = Vector2(0.90625, 10.0313)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_g31bm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(-4, 0)
-scale = Vector2(0.718544, 0.7395)
+scale = Vector2(2, 2)
 texture = ExtResource("3_q5e7j")
 
 [node name="Interact" type="TextureButton" parent="Sprite2D"]
-visible = false
-offset_left = 23.659
-offset_top = -6.76133
-offset_right = 56.659
-offset_bottom = 3.23867
+anchors_preset = -1
+anchor_left = 1.127
+anchor_top = 0.472
+anchor_right = 1.127
+anchor_bottom = 0.472
+offset_left = -48.128
+offset_top = -36.208
+offset_right = -9.12801
+offset_bottom = -22.208
 texture_normal = ExtResource("16_vbfeq")
-texture_pressed = ExtResource("17_5evcf")
+stretch_mode = 0
 
 [node name="spawn" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 2)
-scale = Vector2(0.316408, 0.225912)
 sprite_frames = SubResource("SpriteFrames_oduv4")
 animation = &"spawn"
 frame = 10

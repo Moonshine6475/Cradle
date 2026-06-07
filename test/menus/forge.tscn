@@ -8,8 +8,8 @@
 script = ExtResource("1_cs8n0")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 90.0
-offset_top = 35.0
-offset_right = 400.0
-offset_bottom = 229.0
+offset_left = 80.0
+offset_top = 56.0
+offset_right = 881.0
+offset_bottom = 490.0
 texture = SubResource("CanvasTexture_rtsft")

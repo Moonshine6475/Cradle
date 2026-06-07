@@ -5,7 +5,7 @@ class_name NormalAttackAbility
 func get_primary_damage(attacker: Resource, target: Resource) -> float:
 	var attacker2 = attacker as Entity
 	var plvl = attacker2.lvl
-	var str_val = attacker2.str
+	var str_val = attacker2.stre
 	var target2 = target as Entity
 	if str_val <= 0: 
 		str_val = 1 

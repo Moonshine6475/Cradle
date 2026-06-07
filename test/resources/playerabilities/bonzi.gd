@@ -6,9 +6,9 @@ func get_primary_damage(caster: Resource, target: Resource):
 	var enemy = target as Entity
 	var valu: int
 	match ability_lvl:
-		1: valu = 1*30* (attacker.lvl + 2*attacker.str) 
-		2: valu = 1.4*45*(attacker.lvl + 2*attacker.str) 
-		3: valu = 1.8 * 60*(attacker.lvl + 2*attacker.str) 
+		1: valu = 1*30* (attacker.lvl + 2*attacker.stre) 
+		2: valu = 1.4*45*(attacker.lvl + 2*attacker.stre) 
+		3: valu = 1.8 * 60*(attacker.lvl + 2*attacker.stre) 
 		_: valu = 0
 	return valu
 

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var stats : Entity
 @onready var cat_sprite = $Sprite2D
-const SPEED = 150.0
+const SPEED = 250.0
 
 func _ready() -> void:
 	stats.curhealth = stats.maxhealth
@@ -27,7 +27,7 @@ func _physics_process(delta):
 	pass # Replace with function body.
 func _unhandled_input(event):
 	# When the interaction key is pressed (e.g., your X key)
-	if event.is_action_pressed("interact"):
+	if event.is_action_released("interact"):
 		if has_meta("current_interactable"):
 			var target_zone = get_meta("current_interactable")
 			

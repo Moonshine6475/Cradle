@@ -27,10 +27,10 @@ scale = Vector2(0.276119, 0.257647)
 texture = ExtResource("2_gqqy6")
 
 [node name="quitButton" type="TextureButton" parent="."]
-offset_left = -177.0
-offset_top = 38.0
-offset_right = 123.0
-offset_bottom = 88.0
+offset_left = -148.0
+offset_top = 40.0
+offset_right = 152.0
+offset_bottom = 90.0
 texture_normal = ExtResource("3_5yx1j")
 texture_pressed = ExtResource("4_45y4l")
 texture_hover = ExtResource("5_f7h21")
